@@ -20,6 +20,7 @@
 \usepackage{cancel}
 \usepackage{cite}
 \usepackage{soul}%\st strike out and \hl highlight
+\usepackage{multirow}
 
 \renewcommand\figurename{Fig.} %Abbreviate Figure
  
@@ -703,28 +704,94 @@ Sizable values for $|\alpha-90^{\circ}|$ give us sizable values for the $\langle
 \section{Collider phenomenology}
 \label{sec:collider}
 %
+We can derive limits on the masses of the new particles from existing LHC analysis in the context of simplified supersymmetry (susy) models. 
+To recast the LHC constraints for this model we will use the ATLAS detector analysis. Specifically the constraints on the masses for the fermions $\chi^{\pm}$, $\chi_1^0$ and  $\chi_2^0$ obtained from searches of wino-like neutralino in the susy models~\cite{Aaboud:2018jiw} with decay pattern similar to the patterns of this model that are shown in Fig.\ref{fig:collider-diagrams}.
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{chi1chi1}
+\includegraphics[scale=0.6]{chi1chi20}
+\caption{Diagrams for two leptons and three leptons that resemble the supersymmetry scenarios where the role of the sleptons is played for the  $\mathbb{Z}_2$ odd scalar $\eta^{\pm}$. (Left) $p\,p \to l^{\pm}l^{\mp}+$ $E_{\text{T}}^{\text{miss}}$ process. (Right) $p\,p \to l^{\pm}l^{\mp}l^{\pm}+$ $E_{\text{T}}^{\text{miss}}$ process. }
+\label{fig:collider-diagrams}
+\end{center}
+\end{figure}
+%
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.43]{sigma_pp_xx_MadGraph}
 \includegraphics[scale=0.42]{compressed_spectra}
-\caption{ (Left) Production cross-section of the $\chi^+\chi^-$, $\chi^{\pm}\chi_2^0\,$ pairs computed with \texttt{MadGraph}\cite{Alwall:2014hca}. We fixed $m_{H_2^{\pm}}=300$ GeV and $m_{\chi_2^0}-m_{\chi_1^0}=20$ GeV. We see that $\sigma(p\,p\to\chi^{\pm}\chi_2^0)\approx 3.5\,\text{fb}$ for $m_{\chi^{\pm}}\approx 800$ GeV which is a typical value of wino-like DM in supersymmetry models with commpressed spectra.
-(Right) ATLAS recast applied to the scan done in section~\ref{sec:full-scan}. This limit is based on $36.1\; \text{fb}^{-1}$ of $\sqrt{s} = 13$ TeV proton-proton collisions at the LHC and tree leptons final state~\cite{Aaboud:2018jiw}. }
+\caption{ (Left) Production cross-section of the $\chi^+\chi^-$, $\chi^{\pm}\chi_2^0\,$ pairs computed with \texttt{MadGraph}\cite{Alwall:2014hca}. We fixed $m_{H_2^{\pm}}=300$ GeV and $m_{\chi_2^0}-m_{\chi_1^0}=20$ GeV. 
+%We see that $\sigma(p\,p\to\chi^{\pm}\chi_2^0)\approx 3.5\,\text{fb}$ for $m_{\chi^{\pm}}\approx 800$ GeV which is a typical value of wino-like DM in supersymmetry models with commpressed spectra.
+(Right) ATLAS recasting applied to the scan done in section~\ref{sec:full-scan}. This limit is based on $36.1\; \text{fb}^{-1}$ of $\sqrt{s} = 13$ TeV proton-proton collisions at the LHC and tree leptons final state~\cite{Aaboud:2018jiw}. }
 \label{fig:LHC}
 \end{center}
 \end{figure}
 %
-We can derive limits on the masses of the new particles from existing LHC analysis in the context of simplified supersymmetry models. 
-To recast the LHC constraints for this model we will use the ATLAS detector analysis and the constraints on the masses for the fermions $\chi^{\pm}$ and $\chi_2^0$ obtained from searches of wino-like neutralino in the supersymmetry models~\cite{Aaboud:2018jiw} with decay pattern of $\chi_1^0$ and $\chi^{\pm}$ are quite similar to the patterns of this model.
-%However, although $\chi^{\pm}$ decays into $\chi_1^0$ with an on-shell or of-shell $W$ boson, $\chi_2^0$ does not decays into $\chi^0_1$ associate with a $Z$ gauge boson because the DM does not couplet to the $Z$ gauge boson a tree level. 
-In general, the DM production is associate to the production cross-section modes $p\,p\to\chi^+\chi^-$, $p\,p\to\chi^{\pm}\chi_2^0\,$ and $p\,p\to\chi_2^0\chi_2^0\,$. 
-In Fig.~\ref{fig:LHC} (left) we show the production cross-section of the $\chi^+\chi^-$, $\chi^{\pm}\chi_2^0\,$ pairs that were computed with \texttt{MadGraph5(v2.5.5)}\cite{Alwall:2014hca}.
-The $\chi_2^0\chi_2^0$ pair production is not showed because is so small compared to the other two channels. 
-We clearly see that the production cross-section of the $\chi^{\pm}\chi^0_2$ pair is bigger compared to the $\chi^{+}\chi^{-}$ pair. 
-Therefore, as was argue in the ref.~\cite{Choubey:2017yyn}, It makes this process the most favored one and makes the three leptons final states analysis the most favored to proved this scenario. 
-For that reason, in Fig.~\ref{fig:LHC} (right) we show our recast after the analisys on the search for electroweak production of supersymmetry particles in the final states with three leptons at $\sqrt{s}=13$ TeV with the ATLAS detector of the LHC~\cite{Aaboud:2018jiw}. 
-In this model, the role of the supersymmetry sleptons is played by the $\eta^{\pm}$ scalars that mimic the supersymmetry decay patters.
-We also show the scan done in section~\ref{sec:full-scan} the past all the constraints imposed in this work. Those points are projected in the plane of the $m_{\chi^{\pm}}-m_{\chi_1^0}$ as usual done in the ATLAS analysis. Even though, we realize that the collider searches can prove masses up to $\sim 150$ GeV. However, the spectra is so compressed that almost all points survive this collider recast.
+In general, the DM production is associate to the production cross-section of the processes $p\,p\to\chi^+\chi^-$, $p\,p\to\chi^{\pm}\chi_2^0\,$ and $p\,p\to\chi_2^0\chi_2^0\,$. 
+In Fig.~\ref{fig:LHC} (left) we show the production cross-section of the first and the second process.
+Those were computed with \texttt{MadGraph5(v2.5.5)}\cite{Alwall:2014hca} to leading-order.
+The $\chi_2^0\chi_2^0$ pair production is not showed because is so small compared to the other two processes. 
+We clearly see that the production cross-section of the $\chi^{\pm}\chi^0_2$ pair is bigger compared to the $\chi^{+}\chi^{-}$ pair, making this process and the three leptons final states the most favored process to prove this model.
+However, the $\chi^{\pm}\chi^{\mp}$ pair production is also important, because it is a cleaner channel to looking for signals of this model as argued in the ref.~\cite{Choubey:2017yyn}.
+
+The idea in this section is to show that although some points resemble the susy scenario they need to be recast in order to use the ATLAS analysis. 
+%
+First, we have to take into account that in susy simplified models is assumed that the chargino ($\chi_1^{\pm}$) decay to neutrinos and sleptones ($\tilde{l}$) with a branching ratio BR$(\tilde{\chi}_1^{\pm}\to l\,\tilde{\chi}_1^0)=50\,\%$. The other half decay directly to leptons and sneutrinos $(\tilde{\nu})$.
+%
+At the same time, is assumed that the sleptones decay completely to electrons and muons together with the lightest neutralino $\tilde{\chi}_1^0$, i.e, with a BR$(\tilde{l}\to l\,\tilde{\chi}_1^0)=100\,\%$.
+%
+However, in this model, is difficult to fully satisfy those assumptions because the vertices of those processes are given by the Yukawa couplings $Y_N$ and $Y_{\Sigma}$ of the Lagrangian~\ref{eq:full-lagrangian} that are controlled by the neutrino physic imposed in the construction of the Casas-Ibarra parametrization~\cite{Casas:2001sr, Ibarra:2003up}.
+%
+Taken this into account, in Table~\ref{tab:B-Points} we show some benchmark points (BP) of this model.
+% 
+First, the BP1 fulfill the SUSY assumptions where the scalar $\eta^{\pm}$ decay almost completely to electrons together with the lightest fermion of the model (the DM particle), i.e, with a branching ratio BR$(\tilde{l}\to e\,\tilde{\chi}_1^0)\sim 100\,\%$. 
+However, the $\text{BR}(\chi^{\pm}\to \nu\, \eta^{\pm})$ is the doublet of the SUSY assumptions and therefore the cross-section given by ATLAS needs to be rescaled by a factor 2 for each vertex with the neutrino.
+%  
+Second, we show the BP2, where the final leptons states are not $100\,\%$ muons or electrons. They are only the $\sim50\,\%$ and therefore the cross-section given by the ATLAS analysis needs to be rescaled by a factor 
+$0.25$.
+%
+As a final benchmark point, we show the BP3 which escapes completely the susy analysis. In this case, the final state leptons are principally muons that are not considered in ATLAS analysis.
+%
+\begin{table}
+\centering
+\resizebox{\textwidth}{!}{%tamaño adecuado
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ &&&&&&& \\   
+ & $m_{\chi^{\pm}}[\text{GeV}]$ & $m_{\chi_2^0}[\text{GeV}]$ & $m_{\eta^{\pm}}[\text{GeV}]$ & $m_{\chi_1^0}[\text{GeV}]$ & $\text{BR}(\chi_2^0\to \eta^{\pm}l^{\mp})$& $\text{BR}(\chi^{\pm}\to \nu\, \eta^{\pm})$ & $\text{BR}(\eta^{\pm}\to l\, \chi_1^0)$  \\
+%BP3 451
+\hline
+ &&&&&&& \\   
+BP1 & 290.7 & 290.7  & 255.2 & 242.2 & $\sim 50\,\%$ to $e^{\pm}$ & $\sim 100\,\%$  & $\sim 98\,\%$ to $e^{\pm}$\\
+    &  &  &  &  & $\sim 50\,\%$ to $\mu^{\pm}$ &  & \\   
+ &&&&&&& \\   
+%BP2 2891
+BP2 & 163.4 & 163.4  & 107.6 & 102.6 & $\sim50\,\%$  to $e^{\pm}$  & $\sim 50\,\%$ & $\sim 50\,\%$ to $\mu^{\pm}$\\
+     & &  &  &  &    &  & $\sim 50\,\%$ to $\tau^{\pm}$\\    
+ &&&&&&& \\        
+ %BP3 2222
+BP3 & 608.5 & 608.5  & 598.3 & 588.1 &  & $\sim 50\,\%$ & $\sim 89\,\%$ to $\mu^{\pm}$\\  
+   \hline 
+\end{tabular}}
+\caption{Benchmark points to looking for collider signals.}
+\label{tab:B-Points}
+\end{table}
+%
+In Fig.~\ref{fig:LHC} (right) we show our recasting projected in the plane of the $m_{\chi^{\pm}}$, $m_{\chi_1^0}$ as usual done in the ATLAS analysis. We identified the first two scenarios described before. 
+%
+The first one is shown by the black dashed line. 
+%
+The second case is shown by the green dashed-doted line. 
+%
+We also show the susy scenario (brown line) and the scan done in section~\ref{sec:full-scan} that passed all the constraints imposed in this work. 
+%
+In the end, we realize that the collider searches could prove masses less than $\sim 700$ GeV.
+%However, the spectra is so compressed that almost all points survive this collider recast.
+However, a more detailed study is necessary which escapes the scope the work done in this paper.
+%However, the spectra is so compressed that almost all points survive this collider recast.
  
+
+
 
 
 
