@@ -172,7 +172,7 @@ $U(1)$_Y\times\mathbb{Z}_2$ group.}
 \end{table}
 
 
-The most general and invariant Lagrangian is given by
+The most general and invariant Yukawa Lagrangian is given by
 
 \begin{align}
 \label{eq:full-lagrangian}
@@ -181,10 +181,10 @@ The most general and invariant Lagrangian is given by
 +  Y_{\Sigma}^{\alpha}\bar{L}_{\alpha}\,\tilde{\eta}\, \Sigma 
 +  Y_{\Omega}\overline{\Sigma}\,\Omega\, N\nonumber \\
 +& \dfrac{1}{2}M_{\Sigma}\overline{\Sigma^c}\,\Sigma
-+ \dfrac{1}{2}M_{N}\overline{N^c}N + \text{h.c.} - V(\phi,\eta, \Omega)\,,
++ \dfrac{1}{2}M_{N}\overline{N^c}N \,,
 \end{align}
 %
-where $L$ and $e$ are the fermions of the standard model, $\alpha,\beta=1,2,3$, $\phi$ is the scalar doublet of the standard model, $\tilde{\eta}=i\sigma_2\eta^*$ as usual, and $V(\phi,\eta, \Omega)$ is the scalar potential of this new model, which is given by
+where $L$ and $e$ are the fermions of the standard model, $\alpha,\beta=1,2,3$, $\phi$ is the scalar doublet of the standard model, $\tilde{\eta}=i\sigma_2\eta^*$ as usual. On the other hand, the scalar potential of this model is given by
 %
 \begin{align}
 \label{eq:scalar-potential}
@@ -248,7 +248,7 @@ m_Z^2=\dfrac{1}{4}\left(g^2+g^{'2}\right)v_{\phi}^2\,.
 In particular, the $W$ boson mass is strongly constrained by the value of the triplet VEV, we demand that $v_{\Omega}< 5$ GeV~\cite{Agashe:2014kda}.
 
 \subsection{$\mathbb{Z}_2$-even and $\mathbb{Z}_2$-odd spectrum}
-The new scalar spectrum in this model is divided in two parts. The $\mathbb{Z}_2$-even scalars $\phi^0$, $\Omega^0$, $\Omega^{\pm}$, $\phi^{\pm}$ and the $\mathbb{Z}_2$-odd scalars $\eta^0$, $\eta^{\pm}$, where $\eta^0$ is a good DM candidate widely studied in the literature.
+The scalar spectrum in this model is divided in two parts. The $\mathbb{Z}_2$-even scalars $\phi^0$, $\Omega^0$, $\Omega^{\pm}$, $\phi^{\pm}$ and the $\mathbb{Z}_2$-odd scalars $\eta^0$, $\eta^{\pm}$, where $\eta^0$ is a good DM candidate widely studied in the literature.
 %
 In this frame, the neutral scalars $\phi^0$ and $\Omega^0$ are mixed by a $2\times 2$ mass matrix. We assume that this matrix is diagonalized with the $\beta$ angle, such that
 %
@@ -284,7 +284,7 @@ H_1^{\pm} \\ H_2^{\pm}
 \end{pmatrix}\,,
 \end{align} 
 %
-One of the $H^{\pm}$ charged scalar needs to be identified with the Goldstone boson usual in the standard model which is identified with longitudinal component of the $W$ boson. The remainder is identified as a new charged scalar present in this theory.  
+where the lightest $H^{\pm}$ charged scalar needs to be identified with the Goldstone boson usual in the standard model which is identified with longitudinal component of the $W$ boson. The remainder is identified as a new charged scalar present in this theory.  
 %
 On the other hand, the $\mathbb{Z}_2$-odd scalars $\eta^0$ and $\eta^{\pm}$ do not mix because $\mathbb{Z}_2$ is conserved. Their masses are given by
 %
@@ -518,9 +518,9 @@ $v_{\Omega}$ & $10^{-2}- 5$  (GeV)\\
 \label{tab:scan-parameter}
 \end{table}
 %
-We did  a carefully ramdom search where we imposed the theoretical constraints given by the eq.~\ref{eq:co-positivity} and the correct Yukawa coupling $Y_{\Sigma}^i$, $Y_N^i$ that reproduced the neutrino oscillation parameters~\cite{Forero:2014bxa, deSalas:2017kay}. In order to do that, we follow the algorithm described in section~\ref{sec:neutrino-masses}\footnote{We realized that neutrino hierarchy (IH, NH) does not play an important role in the analysis, for that reason we select randomly both hierarchies.}.
+We did  a carefully random search where we imposed the theoretical constraints given by the eq.~\ref{eq:co-positivity} and the correct Yukawa coupling $Y_{\Sigma}^i$, $Y_N^i$ that reproduced the neutrino oscillation parameters~\cite{Forero:2014bxa, deSalas:2017kay}. In order to do that, we follow the algorithm described in section~\ref{sec:neutrino-masses}\footnote{We realized that neutrino hierarchy (IH, NH) does not play an important role in the analysis, for that reason we select randomly both hierarchies.}.
 %
-After that, we implement this model in~\texttt{SARAH}~\cite{Staub:2008uz,Staub:2009bi,Staub:2010jh,Staub:2012pb,Staub:2013tta} couple to the \texttt{SPheno}~\cite{Porod:2003um,Porod:2011nf} routines. 
+We implement this model in~\texttt{SARAH}~\cite{Staub:2008uz,Staub:2009bi,Staub:2010jh,Staub:2012pb,Staub:2013tta} couple to the \texttt{SPheno}~\cite{Porod:2003um,Porod:2011nf} routines. 
 Later, we used~\texttt{MicrOMEGAs 4.2.5}~\cite{Belanger:2006is} in order to compute the relic density and we only took the models that fulfill the current value $\Omega h^2 = (0.120 \pm 0.001)\; \text{to}\; 3\sigma$~\cite{Aghanim:2018eyx}.
 We realized, although the mixture between the triplet fermion $\Sigma^0$ and the singlet fermion $N$ is important, the parameters space that is full consistent with the DM framework and the neutrino physics status, prefers a singlet component, i.e., $\chi_1^0\approx N$. 
 This feature is shown in the left panel of Fig.~\ref{fig:MN-and-MTF} where we can see that the mass of the DM particle is principally the mass of the singlet fermion for $m_{\chi_1^0}<2$ TeV. 
@@ -821,7 +821,8 @@ In this section we compute some new observables to 1-loop level in this model th
 \end{center}
 \end{figure}
 %
-Although this model is blind to SD scattering of DM at tree level, it can be generated at 1-loop level as is shown in Fig.~\ref{fig:SD}. Concretely,  the exchange of the  $Z$ gauge boson leads to an effective axial vector interaction term of the form~\cite{Jungman:1995df, Ibarra:2016dlb}
+Although this model is blind to SD scattering of DM at tree level, it can be generated at 1-loop level as is shown in Fig.~\ref{fig:SD}. 
+Concretely,  the exchange of the  $Z$ gauge boson leads to an effective axial vector interaction term of the form~\cite{Jungman:1995df, Ibarra:2016dlb}
 %
 \begin{align}
 \label{eq:LSD-eff}
